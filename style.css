@@ -113,6 +113,10 @@ figure{
     margin: 0 15px 5px 0;
 }
 
+.mapa{
+    width: 50%;
+}
+
 .rodape{
     background-color: var(--cor-detalhe-media);
     color: var(--cor-neutra-clara);
