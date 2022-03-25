@@ -101,7 +101,14 @@ figcaption{
     margin: 0;
 }
 
-figure{
+figure{   
+    float: left;
+    margin: 0 15px 5px 0;
+}
+
+.video{
+    width: 480px;
+    height: 270px; 
     float: left;
     margin: 0 15px 5px 0;
 }
