@@ -32,11 +32,42 @@
             </header>
             <article class="conteudo">
                 <h2 class="titulo-2">Utilizando diferentes tipos de caixas de dados</h2>
-                <form action="#" name="frmCadastro" method="post">
+                <form action="javascript:alert('Formulario enviado!');" name="frmCadastro" method="post">
                     <div class="conteudo-formulario">
-                    <label for="textNome">Nome: </label><input type="text" name="txtNome" id="txtNome" maxlength="50" autofocus required>
-                    <label for="txtTelefone"> Telefone: </label> <input type="tel" name="txtFone" id="txtTelefone" maxlength="15" required>
-                    <label for="txtEmail">E-mail</label> <input type="email" name="txtEmail" id="txtEmail" maxlength="40" required>
+                    <label for="textNome">Nome: </label>
+                    <input type="text" name="nome" id="txtNome" maxlength="50" required autofocus> 
+                    <label for="txtTelefone"> Telefone: </label> 
+                    <input type="tel" name="telefone" id="txtTelefone" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" placeholder="(00) 00000-0000" required>
+                    <label for="txtEmail">E-mail: </label> 
+                    <input type="email" name="email" id="txtEmail" maxlength="40" required>
+                    <label for="txtSenha">Senha: </label>
+                    <input type="password" name="senha" id="txtSenha" minlength="6" maxlength="12" required>
+                    <label for="txtData">Data de Nascimento:</label>
+                    <input type="date" name="datadenascimento" id="txtData">
+                    <label for="txtHora">Hora Marcada: </label>
+                    <input type="time" name="horamarcada" id="txtHora">
+                    <label for="txtIdade">Idade: </label>
+                    <input type="number" name="idade" id="txtIdade" min="0" max="150">
+
+                    <br>
+                    <p>Quais alimentos você costuma consumir?</p>
+                    <input type="checkbox" name="comida" id="chkcomida1" value="bovina"><label for="chkcomida1">Carne Bovina</label>
+                    <input type="checkbox" name="comida" id="chkcomida2" value="suina"><label for="chkcomida2">Carne suína</label>
+                    <input type="checkbox" name="comida" id="chkcomida3" value="frangos"><label for="chkcomida3">Frangos</label>
+                    <input type="checkbox" name="comida" id="chkcomida4" value="peixes"><label for="chkcomida4">Peixes</label>
+                    <input type="checkbox" name="comida" id="chkcomida5" value="legumes"><label for="chkcomida5">Legumes</label>
+                    <input type="checkbox" name="comida" id="chkcomida6" value="verduras"><label for="chkcomida6">Verduras</label>
+                    <input type="checkbox" name="comida" id="chkcomida7" value="cereais"><label for="chkcomida7">Cereais</label>
+
+                    <br>
+                    <p>O significado da sigla HTML é:</p>
+                    <input type="radio" name="alternativa" id="radAlternativaA"><label for="radAlternativaA">Hyper Text Model Language</label>
+                    <input type="radio" name="alternativa" id="radAlternativaB"><label for="radAlternativaB">Hyper Text Markup Language</label>
+                    <input type="radio" name="alternativa" id="radAlternativaC"><label for="radAlternativaC">Hyper Text Model Layer</label>
+                    <input type="radio" name="alternativa" id="radAlternativaD"><label for="radAlternativaD">Hyper Text Markup Layer</label>
+
+                    <br>
+                    <button type="submit">Enviar</button>
                     </div>
                 </form>
             </article>
